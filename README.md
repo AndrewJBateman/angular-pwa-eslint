@@ -64,6 +64,7 @@
 ## :clap: Inspiration
 
 * [PWAs (Progressive Web Apps) in Angular - Make them look like Native Mobile Apps! - Roman Just Codes]](https://www.youtube.com/watch?v=WgdUGwTE1XU&t=127s)
+* [A Guide to Building a PWA in Angular 8](https://levelup.gitconnected.com/a-guide-to-building-a-pwa-in-angular-acea27ae708d)
 
 ## :envelope: Contact
 
