@@ -43,13 +43,42 @@
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 * Run `ng update` to update Angular
+* Run `npm run lint` to lint app - produces no output at the moment
 
 ## :computer: Code Examples
 
-* tba
+* `manifest.webmanifest` PWA config.file caches resources/assets using a set caching strategy
 
 ```typescript
-
+{
+  "name": "News App",
+  "short_name": "News App",
+  "theme_color": "#0D47A1",
+  "background_color": "#0D47A1",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/icons/apple-touch-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
 ```
 
 ## :cool: Features
@@ -58,7 +87,7 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Basic tutorial completed
+* Status: App compiles with zero errors. Basic tutorial completed
 * To-Do: Add Eslint then add news API
 
 ## :clap: Inspiration
