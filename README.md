@@ -1,7 +1,7 @@
 # :zap: Angular PWA ESLint
 
 * Progressive Web App that will use ESLint instead of TSLint that is deprecated
-* **Code by 'Roman Just Codes'** from [Roman Just Codes](https://www.youtube.com/channel/UCKsp3r1ERjCpKJtD2n5WtPg) - see [:clap: Inspiration](#clap-inspiration) below.
+* **Code by 'Roman Just Codes'** from [Roman Just Codes](https://www.youtube.com/channel/UCKsp3r1ERjCpKJtD2n5WtPg) - see [:clap: Inspiration](#clap-inspiration) below. Updated to Angular v13
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-pwa-eslint?style=plastic)
@@ -34,8 +34,8 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v11](https://angular.io/)
-* [Angular PWA](https://angular.io/guide/service-worker-getting-started) to add Angular service worked to app
+* [Angular v13](https://angular.io/)
+* [Angular PWA v13](https://angular.io/guide/service-worker-getting-started) to add Angular service worked to app
 * [Iconfinder](https://www.iconfinder.com/) for free svg ivons
 * [Free Vector Graphics Software](https://vectr.com/)
 * [cthedot.de](https://cthedot.de/icongen/) icon generation - Web and App icons and PNG favicons
@@ -92,8 +92,8 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: App compiles with zero errors. Basic tutorial completed
-* To-Do: Add Eslint then add news API
+* Status: App compiles with zero errors.
+* To-Do: test eslint, add API
 
 ## :clap: Inspiration
 
