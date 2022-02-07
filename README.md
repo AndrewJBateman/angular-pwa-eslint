@@ -46,7 +46,7 @@
 
 * Install dependencies using `npm i`
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-* Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
 * Run `ng update` to update Angular
 * Run `npm run lint` to lint app - produces no output at the moment
 
@@ -92,13 +92,14 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: App compiles with zero errors.
-* To-Do: test eslint, add API
+* Status: App compiles & builds with zero errors.
+* To-Do: add app content
 
 ## :clap: Inspiration
 
 * [PWAs (Progressive Web Apps) in Angular - Make them look like Native Mobile Apps! - Roman Just Codes]](https://www.youtube.com/watch?v=WgdUGwTE1XU&t=127s)
 * [A Guide to Building a PWA in Angular 8](https://levelup.gitconnected.com/a-guide-to-building-a-pwa-in-angular-acea27ae708d)
+* [issueexplorer: Angular 13 Build crashes with Cannot find module 'webpack-sources'](https://issueexplorer.com/issue/angular/angular-cli/22082)
 
 ## :file_folder: License
 
