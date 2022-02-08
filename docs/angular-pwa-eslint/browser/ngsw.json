@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1636815137540,
+  "timestamp": 1644344343444,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,10 +13,10 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.4a82f643ea0355c3.js",
+        "/main.1586a0bd96972ad4.js",
         "/manifest.webmanifest",
-        "/polyfills.b8ea141f17bee574.js",
-        "/runtime.5f2041d76ef0d75d.js",
+        "/polyfills.9867c2813878d030.js",
+        "/runtime.56893dd849a57cd6.js",
         "/styles.ef46db3751d8e999.css"
       ],
       "patterns": []
@@ -33,6 +33,14 @@
         "/assets/icons/favicon-16x16.png",
         "/assets/icons/favicon-32x32.png",
         "/assets/icons/favicon.ico",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
         "/assets/icons/pwa-192x192.png",
         "/assets/icons/pwa-512x512.png",
         "/assets/icons/tile150x150.png",
@@ -60,6 +68,14 @@
     "/assets/icons/favicon-16x16.png": "d91e92743e6e20cc62b6ece9b907ffc3f6b898aa",
     "/assets/icons/favicon-32x32.png": "18747d113112b9606bb5c05ee165e8307cc2d09a",
     "/assets/icons/favicon.ico": "f1ef50817214dea1e89bcd497c332604f6821104",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/assets/icons/pwa-192x192.png": "751a92b89c4353a71eac6e34741d514a06536b87",
     "/assets/icons/pwa-512x512.png": "87e0af9092735f907ff37e80d535cf4029ced255",
     "/assets/icons/tile150x150.png": "717bc9e452ad73fa0075d1d0889112a0dc08033a",
@@ -78,11 +94,11 @@
     "/assets/splashscreens/iphonexr_splash.png": "3644574bebe587d8423801b2000f9828c99e560b",
     "/assets/splashscreens/iphonexsmax_splash.png": "6d30de8934b7fdea5e1870c8075ef1ae51878da8",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "2376bdc3cec39826f040d57b92017309f6d67ce2",
-    "/main.4a82f643ea0355c3.js": "4c9f079b9a06a6dac7965672be23faff0fa4cc05",
-    "/manifest.webmanifest": "3199df43bb87a368c97b0843d2d44e8f3bc37bdd",
-    "/polyfills.b8ea141f17bee574.js": "6b936b3c1399f22777c8e31689ca09c41d078d12",
-    "/runtime.5f2041d76ef0d75d.js": "8baa9350b64187b5d86b87934665b07fbf8437dd",
+    "/index.html": "2c6e210b73d476876584f46500f0ea1f38ca9b0d",
+    "/main.1586a0bd96972ad4.js": "f7db5a397d3fb9f64307a4579b7c856bc37375e6",
+    "/manifest.webmanifest": "02b24f007a3aa13722a3a237e6ed487b5148a903",
+    "/polyfills.9867c2813878d030.js": "0c689664254e41104ae014728322e0a25ed864a3",
+    "/runtime.56893dd849a57cd6.js": "4496b0cd8ac70c4e39f0511a86f1ae4f0a54995b",
     "/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
