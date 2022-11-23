@@ -4,3 +4,4 @@ dist
 docs
 tsconfig.json
 *.json
+README.md

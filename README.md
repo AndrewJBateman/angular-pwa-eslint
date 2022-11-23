@@ -12,21 +12,32 @@
 ## :page_facing_up: Table of contents
 
 * [:zap: Angular PWA ESLint](#zap-angular-pwa-eslint)
-  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signal_strength-technologies)
-  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:signal\_strength: Technologies](#signal_strength-technologies)
+  * [:floppy\_disk: Setup](#floppy_disk-setup)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
-  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clipboard: Status \& To-Do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
-  * [:file_folder: License](#file_folder-license)
+  * [:file\_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
 * [Progressive Web App](https://web.dev/progressive-web-apps/) to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device with a single codebase.
+
+* **Application Modules**
+* **Dashboard: Chart1** uses [lightweightcharts](https://www.npmjs.com/package/lightweight-charts) to display crypto messages received from [Coincap websocket stream](https://docs.coincap.io/#9d1f0874-aa46-420c-9091-8bf9859c0743) using [RxJS webSocket](https://rxjs.dev/api/webSocket/webSocket)
+* **Dashboard: Chart2** in dev.
+
+* **Stocks: Ticker** in dev. Uses the [polygon.io](https://polygon.io/) financial market data API
+
+* **Common Modules**
+* About
+* Contact
+* Not-Found
 
 ## :camera: Screenshots
 
@@ -36,6 +47,8 @@
 
 * [Angular v13](https://angular.io/)
 * [Angular PWA v13](https://angular.io/guide/service-worker-getting-started) to add Angular service worked to app
+* [Server-side rendering](https://angular.io/guide/universal) with Angular Universal
+* [npm lightweightcharts v3](https://www.npmjs.com/package/lightweight-charts) small fast financial HTML5 charts
 * [Iconfinder](https://www.iconfinder.com/) for free svg ivons
 * [Free Vector Graphics Software](https://vectr.com/)
 * [cthedot.de](https://cthedot.de/icongen/) icon generation - Web and App icons and PNG favicons
@@ -45,10 +58,16 @@
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
-* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-* Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
-* Run `ng update` to update Angular
 * Run `npm run lint` to lint app - produces no output at the moment
+* Run `npx prettier --write .` to apply prettier rules to ALL files, except those listed in `.prettierignore`
+* Run `npx prettier --check .` to check all files using prettier rules
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Run `npm run build` to build the project. The build artifacts will be stored in the `docs/` directory.
+* `npm run build:ssr` to create SSR build folder
+* `npm serve:ssr` to run SSR build
+* `npm run prerender` to create SSR prerender files
+* Add defer to dist/angular-material-api/index.html to make loading of styles asynchronous
+* `node docs/angular-pwa-eslint/server/main.js` to view on a dev server
 
 ## :computer: Code Examples
 
@@ -88,22 +107,24 @@
 
 ## :cool: Features
 
-* tba
+* Websockets
 
 ## :clipboard: Status & To-Do List
 
 * Status: App compiles & builds with zero errors.
-* To-Do: add app content
+* To-Do: stocks: add ticker card, portfolio table
+* To-Do: crypto: fix chart2
 
 ## :clap: Inspiration
 
-* [PWAs (Progressive Web Apps) in Angular - Make them look like Native Mobile Apps! - Roman Just Codes]](https://www.youtube.com/watch?v=WgdUGwTE1XU&t=127s)
+* [PWAs (Progressive Web Apps) in Angular - Make them look like Native Mobile Apps! - Roman Just Codes](https://www.youtube.com/watch?v=WgdUGwTE1XU&t=127s)
 * [A Guide to Building a PWA in Angular 8](https://levelup.gitconnected.com/a-guide-to-building-a-pwa-in-angular-acea27ae708d)
 * [issueexplorer: Angular 13 Build crashes with Cannot find module 'webpack-sources'](https://issueexplorer.com/issue/angular/angular-cli/22082)
+* [Angular project structure best practice](https://stackoverflow.com/questions/52933476/angular-project-structure-best-practice#:~:text=Do%20be%20descriptive%20with%20file,multiple%20services%2C%20or%20a%20mixture.&text=Do%20keep%20a%20flat%20folder,reaches%20seven%20or%20more%20files.)
 
 ## :file_folder: License
 
-* N/A
+* This project is licensed under the terms of the MIT license.
 
 ## :envelope: Contact
 
