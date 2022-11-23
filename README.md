@@ -1,7 +1,7 @@
 # :zap: Angular PWA ESLint
 
-* Progressive Web App that will use ESLint instead of TSLint that is deprecated
-* **Code by 'Roman Just Codes'** from [Roman Just Codes](https://www.youtube.com/channel/UCKsp3r1ERjCpKJtD2n5WtPg) - see [:clap: Inspiration](#clap-inspiration) below. Updated to Angular v13
+* Progressive Web App to show crypto stock prices using the [polygon.io](https://polygon.io/) financial market data API and ng chart modules
+
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-pwa-eslint?style=plastic)
@@ -45,8 +45,8 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/)
-* [Angular PWA v13](https://angular.io/guide/service-worker-getting-started) to add Angular service worked to app
+* [Angular v15](https://angular.io/)
+* [Angular PWA v15](https://angular.io/guide/service-worker-getting-started) to add Angular service worked to app
 * [Server-side rendering](https://angular.io/guide/universal) with Angular Universal
 * [npm lightweightcharts v3](https://www.npmjs.com/package/lightweight-charts) small fast financial HTML5 charts
 * [Iconfinder](https://www.iconfinder.com/) for free svg ivons
@@ -74,35 +74,23 @@
 * `manifest.webmanifest` PWA config.file caches resources/assets using a set caching strategy
 
 ```typescript
-{
-  "name": "News App",
-  "short_name": "News App",
-  "theme_color": "#0D47A1",
-  "background_color": "#0D47A1",
-  "display": "standalone",
-  "scope": "./",
-  "start_url": "./",
-  "icons": [
-    {
-      "src": "assets/icons/apple-touch-icon-180x180.png",
-      "sizes": "180x180",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "assets/icons/pwa-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "assets/icons/pwa-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable any"
-    }
-  ]
-}
+this.dataService.cryptoWsMessage.subscribe((data: any) => {
+			console.log('cryptoWsMessage data: ', data);
+			const now = new Date();
+			this.price = data;
+			if (this.price.bitcoin) {
+				this.areaSeries.update({
+					time: now.getTime(),
+					value: Number(this.price.bitcoin)
+				});
+			}
+			if (this.price.ethereum) {
+				this.lineSeries.update({
+					time: now.getTime(),
+					value: Number(this.price.ethereum)
+				});
+			}
+		});
 ```
 
 ## :cool: Features
@@ -111,7 +99,8 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: App compiles & builds with zero errors.
+* Status: App compiles & builds with zero errors but is very slow to show a crypto prices on the chart
+* To-Do: update to chart v4? - has breaking changes
 * To-Do: stocks: add ticker card, portfolio table
 * To-Do: crypto: fix chart2
 
