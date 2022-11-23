@@ -1,35 +1,37 @@
-import { NgModule } from '@angular/core';
-// import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 
-// import { HomeComponent } from './components/home/home.component';
-// import { NotFoundComponent } from './components/not-found/not-found.component';
+const routes: Routes = [
 
-// const routes: Routes = [
-  // {
-  //   path: '',
-  //   component: HomeComponent,
-  // },
-  // {
-  //   path: 'about',
-  //   loadChildren: () =>
-  //     import('./components/about/about.module').then((mod) => mod.AboutModule),
-  // },
-  // {
-  //   path: 'contact',
-  //   loadChildren: () =>
-  //     import('./components/contact/contact.module').then(
-  //       (mod) => mod.ContactModule
-  //     ),
-  // },
-  // { path: '**', component: NotFoundComponent },
-// ];
+	{
+		path: "about",
+		loadChildren: () =>
+			import("./modules/common/about/about.module").then(
+				(mod) => mod.AboutModule
+			)
+	},
+	{
+		path: "contact",
+		loadChildren: () =>
+			import("./modules/common/contact/contact.module").then(
+				(mod) => mod.ContactModule
+			)
+	},
+	{
+		path: "**",
+		loadChildren: () =>
+			import("./modules/common/not-found/not-found.module").then(
+				(mod) => mod.NotFoundModule
+			)
+	}
+];
 
 @NgModule({
-  // imports: [
-  //   RouterModule.forRoot(routes, {
-  //     initialNavigation: 'enabled',
-  //   }),
-  // ],
-  // exports: [RouterModule],
+	imports: [
+		RouterModule.forRoot(routes, {
+			initialNavigation: "enabledBlocking"
+		})
+	],
+	exports: [RouterModule]
 })
 export class AppRoutingModule {}

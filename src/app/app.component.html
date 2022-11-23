@@ -1,13 +1,17 @@
 <head>
-  <meta name="description" content="Home page shows API data" />
+	<meta name="description" content="Home page shows API data" />
 </head>
 <div class="app">
-  <h1>Test title</h1>
-  <p>test para</p>
-  <!-- <app-nav></app-nav>
-  <main>
-    <div class="container-fluid">
-      <router-outlet></router-outlet>
-    </div>
-  </main> -->
+	<!-- <app-nav></app-nav> -->
+	<main>
+		<div class="container-fluid">
+			<div class="chart1-styles">
+				<app-chart1></app-chart1>
+			</div>
+			<div class="chart2-styles">
+				<app-chart2></app-chart2>
+			</div>
+      <app-stock-list></app-stock-list>
+		</div>
+	</main>
 </div>
