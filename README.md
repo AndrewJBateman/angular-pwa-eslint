@@ -99,8 +99,9 @@ this.dataService.cryptoWsMessage.subscribe((data: any) => {
 
 ## :clipboard: Status & To-Do List
 
-* Status: App compiles & builds with zero errors but is very slow to show a crypto prices on the chart
+* Status: App compiles & builds. Very slow to show crypto prices on the chart
 * To-Do: update to chart v4? - has breaking changes
+* To-Do: replace "any" return types
 * To-Do: stocks: add ticker card, portfolio table
 * To-Do: crypto: fix chart2
 
