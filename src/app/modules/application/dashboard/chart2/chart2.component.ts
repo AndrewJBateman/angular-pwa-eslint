@@ -61,8 +61,8 @@ export class Chart2Component implements AfterViewInit, OnInit {
 	}
 
 	ngOnInit(): void {
-		this.dataService.cryptoWsMessage.subscribe((data) => {
-			console.log('cryptoWsMessage data: ', data);
+		this.dataService.cryptoWsMessage.subscribe((data: any) => {
+			console.log("cryptoWsMessage data: ", data);
 			const now = new Date();
 			this.price = data;
 			if (this.price.bitcoin) {

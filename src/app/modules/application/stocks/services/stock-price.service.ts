@@ -1,10 +1,5 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { HttpHeaders } from "@angular/common/http";
-import { Observable } from "rxjs";
-// import { Observable } from 'rxjs/Observable';
-// import 'rxjs/add/observable/of';
-// import 'rxjs/add/operator/map';
 
 @Injectable({
 	providedIn: "root"
@@ -15,7 +10,7 @@ export class StockPriceService {
 
 	constructor(public http: HttpClient) {}
 
-	getStockTicker = (symbol: String): Observable<any> => {
+	getStockTicker = (symbol: string): any => {
 		return this.http.get(
 			`${this.apiBaseUrl}/reference/tickers/${symbol}?apiKey=${this.apiKey}`
 		);
