@@ -45,8 +45,8 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v15](https://angular.io/)
-* [Angular PWA v15](https://angular.io/guide/service-worker-getting-started) to add Angular service worked to app
+* [Angular v16](https://angular.io/)
+* [Angular PWA v16](https://angular.io/guide/service-worker-getting-started) to add Angular service worked to app
 * [Server-side rendering](https://angular.io/guide/universal) with Angular Universal
 * [npm lightweightcharts v3](https://www.npmjs.com/package/lightweight-charts) small fast financial HTML5 charts
 * [Iconfinder](https://www.iconfinder.com/) for free svg ivons
