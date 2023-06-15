@@ -1,15 +1,10 @@
-import { Component } from "@angular/core";
-import { SettingsService } from "./settings.service";
+import { Component } from '@angular/core';
 
 @Component({
-	selector: "app-root",
-	templateUrl: "./app.component.html",
-	styleUrls: ["./app.component.scss"]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	title = "angular-pwa-eslint";
-
-  constructor(private settingsService: SettingsService) {
-
-  }
+  title = 'angular-pwa-eslint';
 }
