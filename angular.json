@@ -17,7 +17,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "dist/angular-pwa-eslint",
+						"outputPath": "docs/angular-pwa-eslint",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": ["zone.js"],
