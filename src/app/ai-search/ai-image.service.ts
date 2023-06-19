@@ -10,8 +10,8 @@ import { ImageRequest } from "./image-request.model";
 export class ImageService {
 	private openaiApiURL = "https://api.openai.com/v1";
 
-	private bearerToken = "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";
-	private organisation = "org-p8JGjH4O9KAZEIKINi3YAVDN";
+	private bearerToken = "YOUR TOKEN HERE";
+	private organisation = "YOUR ORG HERE";
 
 	constructor(private http: HttpClient) {}
 
