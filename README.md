@@ -30,32 +30,47 @@
 
 ## :camera: Screenshots
 
-![Example screenshot](./img/pwa.jpg)
+![Example screenshot](./img/ai-image.jpg)
 
 ## :signal_strength: Technologies
 
 * [Angular v16](https://angular.io/)
 * [Angular PWA v16](https://angular.io/guide/service-worker-getting-started) to add Angular service worked to app
-* [http-server](https://www.npmjs.com/package/http-server) command-line http server
 * [Open AI API](https://platform.openai.com/docs/api-reference/introduction)
 
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
+* Get yourself a ChatGPT API key and Organisation ID from [openai.com](https://platform.openai.com/docs/api-reference)
 * Run `npm run lint:fix` to lint app & fix errors
 * Run `npx prettier --write .` to apply prettier rules to ALL files, except those listed in `.prettierignore`
 * Run `npx prettier --check .` to check all files using prettier rules
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-* Run `npm run build` to build the project. The build artifacts will be stored in the `docs/` directory.
-* Add defer to dist/angular-material-api/index.html to make loading of styles asynchronous
-* `node docs/angular-pwa-eslint/server/main.js` to view on a dev server
 
 ## :computer: Code Examples
 
-* tba
+* 'ai-search.component.ts' method to search for AI image
 
 ```typescript
+ngOnInit(): void {
+		const requestImage: ImageRequest = {
+			prompt: "A live salmon with a funny face",
+			n: 1,
+			size: "256x256"
+		};
 
+		this.imageService
+			.fetchImageFromPrompt(requestImage)
+			.pipe(
+				tap((res) => console.log("res: ", res, typeof res)),
+				map((res: any) => res.body),
+				map((image) => image.data),
+				filter((images) => images.length != 0)
+			)
+			.subscribe((images) => {
+				this.generatedImage = images[0].url;
+			});
+	}
 ```
 
 ## :cool: Features
@@ -65,7 +80,7 @@
 ## :clipboard: Status & To-Do List
 
 * Status: Working
-* To-Do: Add more ChatGPT search types
+* To-Do: Add more ChatGPT search types, correct AI search result model 'Result' in 'image.ts' file
 
 ## :clap: Inspiration
 
