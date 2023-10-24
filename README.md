@@ -30,7 +30,7 @@
 
 ## :camera: Screenshots
 
-![Example screenshot](./imgs/ai-image.jpg)
+![Example screenshot](./imgs/ai-image.png)
 
 ## :signal_strength: Technologies
 
